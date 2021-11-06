@@ -1,0 +1,3 @@
+/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir

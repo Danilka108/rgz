@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/danilka108/CLionProjects/rgz/src/config.h
+
+/home/danilka108/CLionProjects/rgz/src/io/io.cpp
+io.h
+/home/danilka108/CLionProjects/rgz/src/io/io.h
+
+/home/danilka108/CLionProjects/rgz/src/io/io.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+../config.h
+/home/danilka108/CLionProjects/rgz/src/config.h
+../str/str.h
+/home/danilka108/CLionProjects/rgz/src/str/str.h
+../num/num.h
+/home/danilka108/CLionProjects/rgz/src/num/num.h
+../translate/translate.h
+/home/danilka108/CLionProjects/rgz/src/translate/translate.h
+
+/home/danilka108/CLionProjects/rgz/src/num/num.h
+../config.h
+/home/danilka108/CLionProjects/rgz/src/config.h
+
+/home/danilka108/CLionProjects/rgz/src/str/str.h
+
+/home/danilka108/CLionProjects/rgz/src/translate/translate.h
+cmath
+-
+../num/num.h
+/home/danilka108/CLionProjects/rgz/src/num/num.h
+../str/str.h
+/home/danilka108/CLionProjects/rgz/src/str/str.h
+
