@@ -2,7 +2,7 @@
 
 Num *create_num(int len, Signs sign)
 {
-    Num *num = new Num();
+    Num *num = new Num;
     num->len = len;
     num->sign = sign;
     
@@ -23,7 +23,7 @@ Num *get_num_slice(Num *num, int slice_start, int slice_end)
 {
     Num *slice = create_num(slice_end - slice_start, num->sign);
     
-    int is_insignificant_zero = 0;
+    int is_insignificant_zero = num->chunks[0] == 0;
     
     for (int i = slice_start, j = 0; i < slice_end && i < num->len; i++)
     {

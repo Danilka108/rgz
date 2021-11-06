@@ -78,10 +78,8 @@ Num *scan_num()
 
 void print_num(Num *num)
 {
-    for (int i = 0; i < num->len; i++) printf("%d", num->chunks[i]);
-    /*
     Str *str = translate_num_to_str(num);
-   
+    
     int start = 0;
     while (str->chars[start] == '0' && start < num->len * NUM_CHUNK_LEN - 1)
         start++;
@@ -91,7 +89,6 @@ void print_num(Num *num)
     printf("%s", str->chars + start);
     
     delete str;
-    */
 }
 
 Operations scan_operation()
