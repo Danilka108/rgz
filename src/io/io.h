@@ -9,13 +9,13 @@
 #ifndef RGZ_1_IO_H
 #define RGZ_1_IO_H
 
-Validation_flags validate_str(Str *str);
+Validation_flags validate_str(Str *);
 
 Str *scan_str();
 
 Num *scan_num();
 
-void print_num(Num *num);
+void print_num(Num *);
 
 Operations scan_operation();
 

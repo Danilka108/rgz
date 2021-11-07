@@ -12,14 +12,20 @@ struct Num
     Num_chunk *chunks;
 };
 
-Num *create_num(int len, Signs sign = Signs::positive);
+Num *create_num(int, Signs = Signs::positive);
 
-Num *copy_num(Num *num);
+Num *copy_num(Num *);
 
-Num *get_num_slice(Num *num, int slice_start, int slice_end);
+void update_num(Num **, Num *);
 
-int get_num_chunk_len(Num_chunk num_chunk);
+void concat_num(Num **, Num *);
 
-Num *add_zeros_to_num(Num *num, int zeros_count);
+Num *get_num_slice(Num *, int, int);
+
+void add_zeros_to_num(Num **, int);
+
+int get_num_chunk_len(Num_chunk);
+
+Comparison_flags compare_unsigned_nums(Num *, Num *);
 
 #endif //RGZ_1_NUM_H

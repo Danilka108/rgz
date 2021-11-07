@@ -12,23 +12,14 @@ Validation_flags validate_str(Str *str)
         switch (str->chars[i])
         {
             case '0':
-                continue;
             case '1':
-                continue;
             case '2':
-                continue;
             case '3':
-                continue;
             case '4':
-                continue;
             case '5':
-                continue;
             case '6':
-                continue;
             case '7':
-                continue;
             case '8':
-                continue;
             case '9':
                 continue;
             default:

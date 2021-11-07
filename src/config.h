@@ -7,6 +7,13 @@
 #define STR_FORMAT "%255s"
 #define NUM_FORMAT "%lli"
 
+enum class Comparison_flags
+{
+    smaller,
+    equal,
+    bigger,
+};
+
 enum class Validation_flags
 {
     valid,

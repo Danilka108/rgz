@@ -10,7 +10,6 @@ set(
         src/str/str.h
         src/translate/translate.h
         src/io/io.h
-        src/operations/compare.h
         src/operations/sum.h
         src/operations/multiply.h
         src/operations/operations.h
@@ -23,7 +22,6 @@ set(
         src/str/str.cpp
         src/translate/translate.cpp
         src/io/io.cpp
-        src/operations/compare.cpp
         src/operations/sum.cpp
         src/operations/multiply.cpp
         src/operations/operations.cpp

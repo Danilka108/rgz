@@ -3,10 +3,10 @@
 Num *create_num(int len, Signs sign)
 {
     Num *num = new Num;
+    
     num->len = len;
     num->sign = sign;
-    
-    (*num).chunks = new Num_chunk[len];
+    num->chunks = new Num_chunk[len];
     
     return num;
 }
@@ -17,6 +17,25 @@ Num *copy_num(Num *num)
     for (int i = 0; i < num->len; i++) new_num->chunks[i] = num->chunks[i];
     
     return new_num;
+}
+
+void update_num(Num **num, Num *new_value)
+{
+    delete *num;
+    *num = new_value;
+}
+
+void concat_num(Num **num, Num *num_addition)
+{
+    Num *new_num = create_num((*num)->len + num_addition->len, (*num)->sign);
+    
+    for (int i = 0; i < new_num->len; i++)
+    {
+        if (i < (*num)->len) new_num->chunks[i] = (*num)->chunks[i];
+        else new_num->chunks[i] = num_addition->chunks[i - (*num)->len];
+    }
+    
+    update_num(num, new_num);
 }
 
 Num *get_num_slice(Num *num, int slice_start, int slice_end)
@@ -37,6 +56,19 @@ Num *get_num_slice(Num *num, int slice_start, int slice_end)
     return slice;
 }
 
+void add_zeros_to_num(Num **num, int zeros_count)
+{
+    Num *new_num = create_num((*num)->len + zeros_count, (*num)->sign);
+    
+    for (int i = 0; i < new_num->len; i++)
+    {
+        if (i < (*num)->len) new_num->chunks[i] = (*num)->chunks[i];
+        else new_num->chunks[i] = 0;
+    }
+    
+    update_num(num, new_num);
+}
+
 int get_num_chunk_len(Num_chunk num_chunk)
 {
     int len = 1;
@@ -46,15 +78,16 @@ int get_num_chunk_len(Num_chunk num_chunk)
     return len;
 }
 
-Num *add_zeros_to_num(Num *num, int zeros_count)
+Comparison_flags compare_unsigned_nums(Num *a_num, Num *b_num)
 {
-    Num *new_num = create_num(num->len + zeros_count, num->sign);
+    if (a_num->len > b_num->len) return Comparison_flags::bigger;
+    if (a_num->len < b_num->len) return Comparison_flags::smaller;
     
-    for (int i = 0; i < new_num->len; i++)
+    for (int i = 0; i < a_num->len && i < b_num->len; i++)
     {
-        if (i < num->len) new_num->chunks[i] = num->chunks[i];
-        else new_num->chunks[i] = 0;
+        if (a_num->chunks[i] > b_num->chunks[i]) return Comparison_flags::bigger;
+        if (a_num->chunks[i] < b_num->chunks[i]) return Comparison_flags::smaller;
     }
     
-    return new_num;
+    return Comparison_flags::equal;
 }

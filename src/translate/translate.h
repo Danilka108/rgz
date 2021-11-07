@@ -5,12 +5,12 @@
 #ifndef RGZ_1_TRANSLATE_H
 #define RGZ_1_TRANSLATE_H
 
-Num_chunk translate_chars_to_num_chunk(char *chars, int chars_len);
+Num_chunk translate_str_to_num_chunk(Str *);
 
-char *translate_num_chunk_to_chars(Num_chunk num_chunk);
+Str *translate_num_chunk_to_str(Num_chunk);
 
-Num *translate_str_to_num(Str *str);
+Num *translate_str_to_num(Str *);
 
-Str *translate_num_to_str(Num *num);
+Str *translate_num_to_str(Num *);
 
 #endif // RGZ_1_TRANSLATE_H

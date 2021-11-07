@@ -11,7 +11,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/danilka108/CLionProjects/rgz/main.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/main.cpp.o"
   "/home/danilka108/CLionProjects/rgz/src/io/io.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/src/io/io.cpp.o"
   "/home/danilka108/CLionProjects/rgz/src/num/num.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/src/num/num.cpp.o"
-  "/home/danilka108/CLionProjects/rgz/src/operations/compare.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/src/operations/compare.cpp.o"
   "/home/danilka108/CLionProjects/rgz/src/operations/multiply.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/src/operations/multiply.cpp.o"
   "/home/danilka108/CLionProjects/rgz/src/operations/operations.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/src/operations/operations.cpp.o"
   "/home/danilka108/CLionProjects/rgz/src/operations/sum.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/src/operations/sum.cpp.o"

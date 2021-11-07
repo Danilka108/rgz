@@ -131,22 +131,9 @@ CMakeFiles/rgz.dir/src/io/io.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgz.dir/src/io/io.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danilka108/CLionProjects/rgz/src/io/io.cpp -o CMakeFiles/rgz.dir/src/io/io.cpp.s
 
-CMakeFiles/rgz.dir/src/operations/compare.cpp.o: CMakeFiles/rgz.dir/flags.make
-CMakeFiles/rgz.dir/src/operations/compare.cpp.o: ../src/operations/compare.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rgz.dir/src/operations/compare.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgz.dir/src/operations/compare.cpp.o -c /home/danilka108/CLionProjects/rgz/src/operations/compare.cpp
-
-CMakeFiles/rgz.dir/src/operations/compare.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgz.dir/src/operations/compare.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danilka108/CLionProjects/rgz/src/operations/compare.cpp > CMakeFiles/rgz.dir/src/operations/compare.cpp.i
-
-CMakeFiles/rgz.dir/src/operations/compare.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgz.dir/src/operations/compare.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danilka108/CLionProjects/rgz/src/operations/compare.cpp -o CMakeFiles/rgz.dir/src/operations/compare.cpp.s
-
 CMakeFiles/rgz.dir/src/operations/sum.cpp.o: CMakeFiles/rgz.dir/flags.make
 CMakeFiles/rgz.dir/src/operations/sum.cpp.o: ../src/operations/sum.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rgz.dir/src/operations/sum.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rgz.dir/src/operations/sum.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgz.dir/src/operations/sum.cpp.o -c /home/danilka108/CLionProjects/rgz/src/operations/sum.cpp
 
 CMakeFiles/rgz.dir/src/operations/sum.cpp.i: cmake_force
@@ -159,7 +146,7 @@ CMakeFiles/rgz.dir/src/operations/sum.cpp.s: cmake_force
 
 CMakeFiles/rgz.dir/src/operations/multiply.cpp.o: CMakeFiles/rgz.dir/flags.make
 CMakeFiles/rgz.dir/src/operations/multiply.cpp.o: ../src/operations/multiply.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rgz.dir/src/operations/multiply.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rgz.dir/src/operations/multiply.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgz.dir/src/operations/multiply.cpp.o -c /home/danilka108/CLionProjects/rgz/src/operations/multiply.cpp
 
 CMakeFiles/rgz.dir/src/operations/multiply.cpp.i: cmake_force
@@ -172,7 +159,7 @@ CMakeFiles/rgz.dir/src/operations/multiply.cpp.s: cmake_force
 
 CMakeFiles/rgz.dir/src/operations/operations.cpp.o: CMakeFiles/rgz.dir/flags.make
 CMakeFiles/rgz.dir/src/operations/operations.cpp.o: ../src/operations/operations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/rgz.dir/src/operations/operations.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rgz.dir/src/operations/operations.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgz.dir/src/operations/operations.cpp.o -c /home/danilka108/CLionProjects/rgz/src/operations/operations.cpp
 
 CMakeFiles/rgz.dir/src/operations/operations.cpp.i: cmake_force
@@ -190,7 +177,6 @@ rgz_OBJECTS = \
 "CMakeFiles/rgz.dir/src/str/str.cpp.o" \
 "CMakeFiles/rgz.dir/src/translate/translate.cpp.o" \
 "CMakeFiles/rgz.dir/src/io/io.cpp.o" \
-"CMakeFiles/rgz.dir/src/operations/compare.cpp.o" \
 "CMakeFiles/rgz.dir/src/operations/sum.cpp.o" \
 "CMakeFiles/rgz.dir/src/operations/multiply.cpp.o" \
 "CMakeFiles/rgz.dir/src/operations/operations.cpp.o"
@@ -203,13 +189,12 @@ rgz: CMakeFiles/rgz.dir/src/num/num.cpp.o
 rgz: CMakeFiles/rgz.dir/src/str/str.cpp.o
 rgz: CMakeFiles/rgz.dir/src/translate/translate.cpp.o
 rgz: CMakeFiles/rgz.dir/src/io/io.cpp.o
-rgz: CMakeFiles/rgz.dir/src/operations/compare.cpp.o
 rgz: CMakeFiles/rgz.dir/src/operations/sum.cpp.o
 rgz: CMakeFiles/rgz.dir/src/operations/multiply.cpp.o
 rgz: CMakeFiles/rgz.dir/src/operations/operations.cpp.o
 rgz: CMakeFiles/rgz.dir/build.make
 rgz: CMakeFiles/rgz.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable rgz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable rgz"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rgz.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

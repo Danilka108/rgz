@@ -7,7 +7,6 @@ CMakeFiles/rgz.dir/main.cpp.o
  /home/danilka108/CLionProjects/rgz/src/config.h
  /home/danilka108/CLionProjects/rgz/src/io/io.h
  /home/danilka108/CLionProjects/rgz/src/num/num.h
- /home/danilka108/CLionProjects/rgz/src/operations/compare.h
  /home/danilka108/CLionProjects/rgz/src/operations/multiply.h
  /home/danilka108/CLionProjects/rgz/src/operations/operations.h
  /home/danilka108/CLionProjects/rgz/src/operations/sum.h
@@ -24,16 +23,10 @@ CMakeFiles/rgz.dir/src/num/num.cpp.o
  /home/danilka108/CLionProjects/rgz/src/config.h
  /home/danilka108/CLionProjects/rgz/src/num/num.cpp
  /home/danilka108/CLionProjects/rgz/src/num/num.h
-CMakeFiles/rgz.dir/src/operations/compare.cpp.o
- /home/danilka108/CLionProjects/rgz/src/config.h
- /home/danilka108/CLionProjects/rgz/src/num/num.h
- /home/danilka108/CLionProjects/rgz/src/operations/compare.cpp
- /home/danilka108/CLionProjects/rgz/src/operations/compare.h
 CMakeFiles/rgz.dir/src/operations/multiply.cpp.o
  /home/danilka108/CLionProjects/rgz/src/config.h
  /home/danilka108/CLionProjects/rgz/src/io/io.h
  /home/danilka108/CLionProjects/rgz/src/num/num.h
- /home/danilka108/CLionProjects/rgz/src/operations/compare.h
  /home/danilka108/CLionProjects/rgz/src/operations/multiply.cpp
  /home/danilka108/CLionProjects/rgz/src/operations/multiply.h
  /home/danilka108/CLionProjects/rgz/src/operations/sum.h
@@ -43,7 +36,6 @@ CMakeFiles/rgz.dir/src/operations/operations.cpp.o
  /home/danilka108/CLionProjects/rgz/src/config.h
  /home/danilka108/CLionProjects/rgz/src/io/io.h
  /home/danilka108/CLionProjects/rgz/src/num/num.h
- /home/danilka108/CLionProjects/rgz/src/operations/compare.h
  /home/danilka108/CLionProjects/rgz/src/operations/multiply.h
  /home/danilka108/CLionProjects/rgz/src/operations/operations.cpp
  /home/danilka108/CLionProjects/rgz/src/operations/operations.h
@@ -53,7 +45,6 @@ CMakeFiles/rgz.dir/src/operations/operations.cpp.o
 CMakeFiles/rgz.dir/src/operations/sum.cpp.o
  /home/danilka108/CLionProjects/rgz/src/config.h
  /home/danilka108/CLionProjects/rgz/src/num/num.h
- /home/danilka108/CLionProjects/rgz/src/operations/compare.h
  /home/danilka108/CLionProjects/rgz/src/operations/sum.cpp
  /home/danilka108/CLionProjects/rgz/src/operations/sum.h
 CMakeFiles/rgz.dir/src/str/str.cpp.o

@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/rgz.dir/main.cpp.o"
   "CMakeFiles/rgz.dir/src/io/io.cpp.o"
   "CMakeFiles/rgz.dir/src/num/num.cpp.o"
-  "CMakeFiles/rgz.dir/src/operations/compare.cpp.o"
   "CMakeFiles/rgz.dir/src/operations/multiply.cpp.o"
   "CMakeFiles/rgz.dir/src/operations/operations.cpp.o"
   "CMakeFiles/rgz.dir/src/operations/sum.cpp.o"

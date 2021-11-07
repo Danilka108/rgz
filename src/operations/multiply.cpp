@@ -1,6 +1,6 @@
 #include "multiply.h"
 
-Num *multiply_num_to_num_chunk(Num *num, Num_chunk num_chunk)
+Num *multiply_num_and_num_chunk(Num *num, Num_chunk num_chunk)
 {
     Num *multiply_num = create_num(1 + num->len);
     
@@ -25,11 +25,11 @@ Num *multiply_unsigned_nums(Num *max_num, Num *min_num)
     
     for (int i = min_num->len - 1; i >= 0; i--)
     {
-        Num *multiply_num = multiply_num_to_num_chunk(max_num, min_num->chunks[i]);
+        Num *multiply_num = multiply_num_and_num_chunk(max_num, min_num->chunks[i]);
         
-        multiply_num = add_zeros_to_num(multiply_num, min_num->len - i - 1);
+        add_zeros_to_num(&multiply_num, min_num->len - i - 1);
         
-        num = sum_nums(multiply_num, num);
+        update_num(&num, sum_nums(multiply_num, num));
         delete multiply_num;
     }
     

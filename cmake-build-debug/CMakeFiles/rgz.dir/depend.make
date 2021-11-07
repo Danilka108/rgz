@@ -7,7 +7,6 @@ CMakeFiles/rgz.dir/main.cpp.o: \
  ../src/config.h \
  ../src/io/io.h \
  ../src/num/num.h \
- ../src/operations/compare.h \
  ../src/operations/multiply.h \
  ../src/operations/operations.h \
  ../src/operations/sum.h \
@@ -24,16 +23,10 @@ CMakeFiles/rgz.dir/src/num/num.cpp.o: \
  ../src/config.h \
  ../src/num/num.cpp \
  ../src/num/num.h
-CMakeFiles/rgz.dir/src/operations/compare.cpp.o: \
- ../src/config.h \
- ../src/num/num.h \
- ../src/operations/compare.cpp \
- ../src/operations/compare.h
 CMakeFiles/rgz.dir/src/operations/multiply.cpp.o: \
  ../src/config.h \
  ../src/io/io.h \
  ../src/num/num.h \
- ../src/operations/compare.h \
  ../src/operations/multiply.cpp \
  ../src/operations/multiply.h \
  ../src/operations/sum.h \
@@ -43,7 +36,6 @@ CMakeFiles/rgz.dir/src/operations/operations.cpp.o: \
  ../src/config.h \
  ../src/io/io.h \
  ../src/num/num.h \
- ../src/operations/compare.h \
  ../src/operations/multiply.h \
  ../src/operations/operations.cpp \
  ../src/operations/operations.h \
@@ -53,7 +45,6 @@ CMakeFiles/rgz.dir/src/operations/operations.cpp.o: \
 CMakeFiles/rgz.dir/src/operations/sum.cpp.o: \
  ../src/config.h \
  ../src/num/num.h \
- ../src/operations/compare.h \
  ../src/operations/sum.cpp \
  ../src/operations/sum.h
 CMakeFiles/rgz.dir/src/str/str.cpp.o: \

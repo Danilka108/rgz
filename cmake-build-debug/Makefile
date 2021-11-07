@@ -201,30 +201,6 @@ src/num/num.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/num/num.cpp.s
 .PHONY : src/num/num.cpp.s
 
-src/operations/compare.o: src/operations/compare.cpp.o
-.PHONY : src/operations/compare.o
-
-# target to build an object file
-src/operations/compare.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/compare.cpp.o
-.PHONY : src/operations/compare.cpp.o
-
-src/operations/compare.i: src/operations/compare.cpp.i
-.PHONY : src/operations/compare.i
-
-# target to preprocess a source file
-src/operations/compare.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/compare.cpp.i
-.PHONY : src/operations/compare.cpp.i
-
-src/operations/compare.s: src/operations/compare.cpp.s
-.PHONY : src/operations/compare.s
-
-# target to generate assembly for a file
-src/operations/compare.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/compare.cpp.s
-.PHONY : src/operations/compare.cpp.s
-
 src/operations/multiply.o: src/operations/multiply.cpp.o
 .PHONY : src/operations/multiply.o
 
@@ -363,9 +339,6 @@ help:
 	@echo "... src/num/num.o"
 	@echo "... src/num/num.i"
 	@echo "... src/num/num.s"
-	@echo "... src/operations/compare.o"
-	@echo "... src/operations/compare.i"
-	@echo "... src/operations/compare.s"
 	@echo "... src/operations/multiply.o"
 	@echo "... src/operations/multiply.i"
 	@echo "... src/operations/multiply.s"

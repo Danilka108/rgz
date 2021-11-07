@@ -25,6 +25,7 @@ void choose_operation()
     }
     
     print_num(num);
+    
     delete a_num;
     delete b_num;
     delete num;

@@ -100,12 +100,6 @@
 		<Unit filename="/home/danilka108/CLionProjects/rgz/src/num/num.h">
 			<Option target="rgz"/>
 		</Unit>
-		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/compare.cpp">
-			<Option target="rgz"/>
-		</Unit>
-		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/compare.h">
-			<Option target="rgz"/>
-		</Unit>
 		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/multiply.cpp">
 			<Option target="rgz"/>
 		</Unit>
