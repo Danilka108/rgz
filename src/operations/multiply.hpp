@@ -1,6 +1,6 @@
-#include "../num/num.h"
-#include "sum.h"
-#include "../io/io.h"
+#include "../num/num.hpp"
+#include "sum.hpp"
+#include "../io/io.hpp"
 #include <stdio.h>
 
 #ifndef RGZ_1_MULTIPLY_H

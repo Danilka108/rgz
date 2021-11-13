@@ -1,6 +1,6 @@
-#include "../num/num.h"
-#include "sum.h"
-#include "multiply.h"
+#include "../num/num.hpp"
+#include "sum.hpp"
+#include "multiply.hpp"
 
 #ifndef RGZ_DIVIDE_H
 #define RGZ_DIVIDE_H

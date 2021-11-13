@@ -1,6 +1,6 @@
 #include <cmath>
-#include "../num/num.h"
-#include "../str/str.h"
+#include "../num/num.hpp"
+#include "../str/str.hpp"
 
 #ifndef RGZ_1_TRANSLATE_H
 #define RGZ_1_TRANSLATE_H

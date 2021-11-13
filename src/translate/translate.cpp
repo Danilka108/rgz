@@ -1,4 +1,4 @@
-#include "translate.h"
+#include "translate.hpp"
 
 Num_chunk translate_str_to_num_chunk(Str *str)
 {

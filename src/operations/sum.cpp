@@ -1,4 +1,4 @@
-#include "sum.h"
+#include "sum.hpp"
 
 Num *sum_unsigned_nums(Num *max_num, Num *min_num)
 {

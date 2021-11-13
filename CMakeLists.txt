@@ -6,14 +6,14 @@ set(CMAKE_CXX_STANDARD 14)
 set(
         PROJECT_HEADERS
         main.h
-        src/num/num.h
-        src/str/str.h
-        src/translate/translate.h
-        src/io/io.h
-        src/operations/sum.h
-        src/operations/multiply.h
-        src/operations/choose_operation.h
-        src/operations/divide.h
+        src/num/num.hpp
+        src/str/str.hpp
+        src/translate/translate.hpp
+        src/io/io.hpp
+        src/operations/sum.hpp
+        src/operations/multiply.hpp
+        src/operations/choose_operation.hpp
+        src/operations/divide.hpp
 )
 
 set(

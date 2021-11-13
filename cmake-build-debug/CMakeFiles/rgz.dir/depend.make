@@ -5,66 +5,66 @@ CMakeFiles/rgz.dir/main.cpp.o: \
  ../main.cpp \
  ../main.h \
  ../src/config.h \
- ../src/io/io.h \
- ../src/num/num.h \
- ../src/operations/choose_operation.h \
- ../src/operations/divide.h \
- ../src/operations/multiply.h \
- ../src/operations/sum.h \
- ../src/str/str.h \
- ../src/translate/translate.h
+ ../src/io/io.hpp \
+ ../src/num/num.hpp \
+ ../src/operations/choose_operation.hpp \
+ ../src/operations/divide.hpp \
+ ../src/operations/multiply.hpp \
+ ../src/operations/sum.hpp \
+ ../src/str/str.hpp \
+ ../src/translate/translate.hpp
 CMakeFiles/rgz.dir/src/io/io.cpp.o: \
  ../src/config.h \
  ../src/io/io.cpp \
- ../src/io/io.h \
- ../src/num/num.h \
- ../src/str/str.h \
- ../src/translate/translate.h
+ ../src/io/io.hpp \
+ ../src/num/num.hpp \
+ ../src/str/str.hpp \
+ ../src/translate/translate.hpp
 CMakeFiles/rgz.dir/src/num/num.cpp.o: \
  ../src/config.h \
  ../src/num/num.cpp \
- ../src/num/num.h
+ ../src/num/num.hpp
 CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.o: \
  ../src/config.h \
- ../src/io/io.h \
- ../src/num/num.h \
+ ../src/io/io.hpp \
+ ../src/num/num.hpp \
  ../src/operations/choose_operation.cpp \
- ../src/operations/choose_operation.h \
- ../src/operations/divide.h \
- ../src/operations/multiply.h \
- ../src/operations/sum.h \
- ../src/str/str.h \
- ../src/translate/translate.h
+ ../src/operations/choose_operation.hpp \
+ ../src/operations/divide.hpp \
+ ../src/operations/multiply.hpp \
+ ../src/operations/sum.hpp \
+ ../src/str/str.hpp \
+ ../src/translate/translate.hpp
 CMakeFiles/rgz.dir/src/operations/divide.cpp.o: \
  ../src/config.h \
- ../src/io/io.h \
- ../src/num/num.h \
+ ../src/io/io.hpp \
+ ../src/num/num.hpp \
  ../src/operations/divide.cpp \
- ../src/operations/divide.h \
- ../src/operations/multiply.h \
- ../src/operations/sum.h \
- ../src/str/str.h \
- ../src/translate/translate.h
+ ../src/operations/divide.hpp \
+ ../src/operations/multiply.hpp \
+ ../src/operations/sum.hpp \
+ ../src/str/str.hpp \
+ ../src/translate/translate.hpp
 CMakeFiles/rgz.dir/src/operations/multiply.cpp.o: \
  ../src/config.h \
- ../src/io/io.h \
- ../src/num/num.h \
+ ../src/io/io.hpp \
+ ../src/num/num.hpp \
  ../src/operations/multiply.cpp \
- ../src/operations/multiply.h \
- ../src/operations/sum.h \
- ../src/str/str.h \
- ../src/translate/translate.h
+ ../src/operations/multiply.hpp \
+ ../src/operations/sum.hpp \
+ ../src/str/str.hpp \
+ ../src/translate/translate.hpp
 CMakeFiles/rgz.dir/src/operations/sum.cpp.o: \
  ../src/config.h \
- ../src/num/num.h \
+ ../src/num/num.hpp \
  ../src/operations/sum.cpp \
- ../src/operations/sum.h
+ ../src/operations/sum.hpp
 CMakeFiles/rgz.dir/src/str/str.cpp.o: \
  ../src/str/str.cpp \
- ../src/str/str.h
+ ../src/str/str.hpp
 CMakeFiles/rgz.dir/src/translate/translate.cpp.o: \
  ../src/config.h \
- ../src/num/num.h \
- ../src/str/str.h \
+ ../src/num/num.hpp \
+ ../src/str/str.hpp \
  ../src/translate/translate.cpp \
- ../src/translate/translate.h
+ ../src/translate/translate.hpp

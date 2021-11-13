@@ -1,4 +1,4 @@
-#include "divide.h"
+#include "divide.hpp"
 
 Num *divide_num(Num *dividend, Num *divider)
 {

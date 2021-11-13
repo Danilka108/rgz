@@ -1,5 +1,5 @@
 #include <math.h>
-#include "../num/num.h"
+#include "../num/num.hpp"
 #include "../config.h"
 
 #ifndef RGZ_1_SUM_H

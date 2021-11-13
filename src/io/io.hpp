@@ -2,9 +2,9 @@
 #include <string.h>
 #include <stdlib.h>
 #include "../config.h"
-#include "../str/str.h"
-#include "../num/num.h"
-#include "../translate/translate.h"
+#include "../str/str.hpp"
+#include "../num/num.hpp"
+#include "../translate/translate.hpp"
 
 #ifndef RGZ_1_IO_H
 #define RGZ_1_IO_H

@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "../io/io.h"
-#include "sum.h"
-#include "multiply.h"
-#include "divide.h"
+#include "../io/io.hpp"
+#include "sum.hpp"
+#include "multiply.hpp"
+#include "divide.hpp"
 
 #ifndef RGZ_1_OPERATIONS_H
 #define RGZ_1_OPERATIONS_H
