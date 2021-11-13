@@ -47,24 +47,35 @@ Num *subtract_unsigned_nums(Num *max_num, Num *min_num)
 
 Num *sum_nums(Num *a_num, Num *b_num, Signs sign)
 {
-    Num *zero = create_num(1, Signs::positive);
-    zero->chunks[0] = 0;
+    Num *zero = create_num_from_num_chunk(0);
     
-    b_num->sign = sign == b_num->sign
-                  ? Signs::positive
-                  : Signs::negative;
+    Num *b_num_copy = copy_num(b_num);
+    b_num_copy->sign = b_num_copy->sign == sign
+                       ? Signs::positive
+                       : Signs::negative;
     
     Comparison_flags comparison = compare_unsigned_nums(a_num, b_num);
-    Num *max_num = comparison == Comparison_flags::bigger ? a_num : b_num;
-    Num *min_num = comparison == Comparison_flags::smaller ? a_num : b_num;
     
-    Num *sum = max_num->sign == min_num->sign
-               ? sum_unsigned_nums(max_num, min_num)
-               : comparison == Comparison_flags::equal
-                 ? zero
-                 : (delete zero, subtract_unsigned_nums(max_num, min_num));
+    if (a_num->sign != b_num_copy->sign && comparison == Comparison_flags::equal)
+    {
+        delete b_num_copy;
+        return zero;
+    }
     
+    delete zero;
+    
+    Num *max_num = comparison == Comparison_flags::bigger ? a_num : b_num_copy;
+    Num *min_num = comparison == Comparison_flags::smaller ? a_num : b_num_copy;
+    
+    Num *sum;
+    if (max_num->sign == min_num->sign)
+        sum = sum_unsigned_nums(max_num, min_num);
+    else
+        sum = subtract_unsigned_nums(max_num, min_num);
+    
+    sum->sign = max_num->sign;
     sum = get_num_slice(sum, 0, sum->len);
     
+    delete b_num_copy;
     return sum;
 }

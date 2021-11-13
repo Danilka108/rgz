@@ -201,6 +201,54 @@ src/num/num.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/num/num.cpp.s
 .PHONY : src/num/num.cpp.s
 
+src/operations/choose_operation.o: src/operations/choose_operation.cpp.o
+.PHONY : src/operations/choose_operation.o
+
+# target to build an object file
+src/operations/choose_operation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.o
+.PHONY : src/operations/choose_operation.cpp.o
+
+src/operations/choose_operation.i: src/operations/choose_operation.cpp.i
+.PHONY : src/operations/choose_operation.i
+
+# target to preprocess a source file
+src/operations/choose_operation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.i
+.PHONY : src/operations/choose_operation.cpp.i
+
+src/operations/choose_operation.s: src/operations/choose_operation.cpp.s
+.PHONY : src/operations/choose_operation.s
+
+# target to generate assembly for a file
+src/operations/choose_operation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.s
+.PHONY : src/operations/choose_operation.cpp.s
+
+src/operations/divide.o: src/operations/divide.cpp.o
+.PHONY : src/operations/divide.o
+
+# target to build an object file
+src/operations/divide.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/divide.cpp.o
+.PHONY : src/operations/divide.cpp.o
+
+src/operations/divide.i: src/operations/divide.cpp.i
+.PHONY : src/operations/divide.i
+
+# target to preprocess a source file
+src/operations/divide.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/divide.cpp.i
+.PHONY : src/operations/divide.cpp.i
+
+src/operations/divide.s: src/operations/divide.cpp.s
+.PHONY : src/operations/divide.s
+
+# target to generate assembly for a file
+src/operations/divide.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/divide.cpp.s
+.PHONY : src/operations/divide.cpp.s
+
 src/operations/multiply.o: src/operations/multiply.cpp.o
 .PHONY : src/operations/multiply.o
 
@@ -224,30 +272,6 @@ src/operations/multiply.s: src/operations/multiply.cpp.s
 src/operations/multiply.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/multiply.cpp.s
 .PHONY : src/operations/multiply.cpp.s
-
-src/operations/operations.o: src/operations/operations.cpp.o
-.PHONY : src/operations/operations.o
-
-# target to build an object file
-src/operations/operations.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/operations.cpp.o
-.PHONY : src/operations/operations.cpp.o
-
-src/operations/operations.i: src/operations/operations.cpp.i
-.PHONY : src/operations/operations.i
-
-# target to preprocess a source file
-src/operations/operations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/operations.cpp.i
-.PHONY : src/operations/operations.cpp.i
-
-src/operations/operations.s: src/operations/operations.cpp.s
-.PHONY : src/operations/operations.s
-
-# target to generate assembly for a file
-src/operations/operations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/src/operations/operations.cpp.s
-.PHONY : src/operations/operations.cpp.s
 
 src/operations/sum.o: src/operations/sum.cpp.o
 .PHONY : src/operations/sum.o
@@ -339,12 +363,15 @@ help:
 	@echo "... src/num/num.o"
 	@echo "... src/num/num.i"
 	@echo "... src/num/num.s"
+	@echo "... src/operations/choose_operation.o"
+	@echo "... src/operations/choose_operation.i"
+	@echo "... src/operations/choose_operation.s"
+	@echo "... src/operations/divide.o"
+	@echo "... src/operations/divide.i"
+	@echo "... src/operations/divide.s"
 	@echo "... src/operations/multiply.o"
 	@echo "... src/operations/multiply.i"
 	@echo "... src/operations/multiply.s"
-	@echo "... src/operations/operations.o"
-	@echo "... src/operations/operations.i"
-	@echo "... src/operations/operations.s"
 	@echo "... src/operations/sum.o"
 	@echo "... src/operations/sum.i"
 	@echo "... src/operations/sum.s"

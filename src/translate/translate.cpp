@@ -18,9 +18,8 @@ Str *translate_num_chunk_to_str(Num_chunk num_chunk)
     int num_chunk_len = get_num_chunk_len(num_chunk);
     Str *str = create_str(NUM_CHUNK_LEN);
     
-    if (num_chunk_len < NUM_CHUNK_LEN)
-        for (int i = 0; i < NUM_CHUNK_LEN - num_chunk_len; i++)
-            str->chars[i] = '0';
+    for (int i = 0; i < NUM_CHUNK_LEN - num_chunk_len; i++)
+        str->chars[i] = '0';
     
     for (int i = NUM_CHUNK_LEN - num_chunk_len; i < NUM_CHUNK_LEN; i++)
         str->chars[i] = '0' + num_chunk / (Num_chunk) pow(10, NUM_CHUNK_LEN - i - 1) % 10;
@@ -30,7 +29,7 @@ Str *translate_num_chunk_to_str(Num_chunk num_chunk)
 
 Num *translate_str_to_num(Str *str)
 {
-    Num *num = create_num((int) ceil((double) str->len / NUM_CHUNK_LEN));
+    Num *num = create_num(ceil((double) str->len / NUM_CHUNK_LEN));
     
     for (int i = 1; i <= num->len; i++)
     {

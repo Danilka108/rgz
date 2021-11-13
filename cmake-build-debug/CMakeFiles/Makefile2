@@ -81,12 +81,12 @@ clean: CMakeFiles/rgz.dir/clean
 CMakeFiles/rgz.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target rgz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target rgz"
 .PHONY : CMakeFiles/rgz.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rgz.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rgz.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/rgz.dir/rule

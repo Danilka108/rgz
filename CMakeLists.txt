@@ -12,7 +12,8 @@ set(
         src/io/io.h
         src/operations/sum.h
         src/operations/multiply.h
-        src/operations/operations.h
+        src/operations/choose_operation.h
+        src/operations/divide.h
 )
 
 set(
@@ -24,7 +25,8 @@ set(
         src/io/io.cpp
         src/operations/sum.cpp
         src/operations/multiply.cpp
-        src/operations/operations.cpp
+        src/operations/choose_operation.cpp
+        src/operations/divide.cpp
 )
 
 add_executable(

@@ -1,4 +1,4 @@
-#include "operations.h"
+#include "choose_operation.h"
 
 void choose_operation()
 {
@@ -14,13 +14,16 @@ void choose_operation()
     switch (operation)
     {
         case Operations::sum:
-            num = sum_nums(a_num, b_num, Signs::positive);
+            num = sum_nums(a_num, b_num);
             break;
         case Operations::subtract:
             num = sum_nums(a_num, b_num, Signs::negative);
             break;
         case Operations::multiply:
             num = multiply_nums(a_num, b_num);
+            break;
+        case Operations::divide:
+            num = divide_num(a_num, b_num);
             break;
     }
     

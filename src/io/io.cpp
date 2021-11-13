@@ -77,6 +77,11 @@ void print_num(Num *num)
     
     if (num->sign == Signs::negative) printf("-");
     
+    Str *end = create_str(1);
+    end->chars[0] = '\0';
+    
+    concat_str(&str, end);
+    
     printf("%s", str->chars + start);
     
     delete str;
@@ -96,6 +101,8 @@ Operations scan_operation()
             return Operations::sum;
         case (char) (Operations::subtract):
             return Operations::subtract;
+        case (char) (Operations::divide):
+            return Operations::divide;
         default:
             printf("Ошибка. Данная операция не определена.");
             exit(0);

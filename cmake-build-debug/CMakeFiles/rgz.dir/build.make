@@ -157,18 +157,31 @@ CMakeFiles/rgz.dir/src/operations/multiply.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgz.dir/src/operations/multiply.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danilka108/CLionProjects/rgz/src/operations/multiply.cpp -o CMakeFiles/rgz.dir/src/operations/multiply.cpp.s
 
-CMakeFiles/rgz.dir/src/operations/operations.cpp.o: CMakeFiles/rgz.dir/flags.make
-CMakeFiles/rgz.dir/src/operations/operations.cpp.o: ../src/operations/operations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rgz.dir/src/operations/operations.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgz.dir/src/operations/operations.cpp.o -c /home/danilka108/CLionProjects/rgz/src/operations/operations.cpp
+CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.o: CMakeFiles/rgz.dir/flags.make
+CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.o: ../src/operations/choose_operation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.o -c /home/danilka108/CLionProjects/rgz/src/operations/choose_operation.cpp
 
-CMakeFiles/rgz.dir/src/operations/operations.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgz.dir/src/operations/operations.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danilka108/CLionProjects/rgz/src/operations/operations.cpp > CMakeFiles/rgz.dir/src/operations/operations.cpp.i
+CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danilka108/CLionProjects/rgz/src/operations/choose_operation.cpp > CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.i
 
-CMakeFiles/rgz.dir/src/operations/operations.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgz.dir/src/operations/operations.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danilka108/CLionProjects/rgz/src/operations/operations.cpp -o CMakeFiles/rgz.dir/src/operations/operations.cpp.s
+CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danilka108/CLionProjects/rgz/src/operations/choose_operation.cpp -o CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.s
+
+CMakeFiles/rgz.dir/src/operations/divide.cpp.o: CMakeFiles/rgz.dir/flags.make
+CMakeFiles/rgz.dir/src/operations/divide.cpp.o: ../src/operations/divide.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/rgz.dir/src/operations/divide.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgz.dir/src/operations/divide.cpp.o -c /home/danilka108/CLionProjects/rgz/src/operations/divide.cpp
+
+CMakeFiles/rgz.dir/src/operations/divide.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgz.dir/src/operations/divide.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danilka108/CLionProjects/rgz/src/operations/divide.cpp > CMakeFiles/rgz.dir/src/operations/divide.cpp.i
+
+CMakeFiles/rgz.dir/src/operations/divide.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgz.dir/src/operations/divide.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danilka108/CLionProjects/rgz/src/operations/divide.cpp -o CMakeFiles/rgz.dir/src/operations/divide.cpp.s
 
 # Object files for target rgz
 rgz_OBJECTS = \
@@ -179,7 +192,8 @@ rgz_OBJECTS = \
 "CMakeFiles/rgz.dir/src/io/io.cpp.o" \
 "CMakeFiles/rgz.dir/src/operations/sum.cpp.o" \
 "CMakeFiles/rgz.dir/src/operations/multiply.cpp.o" \
-"CMakeFiles/rgz.dir/src/operations/operations.cpp.o"
+"CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.o" \
+"CMakeFiles/rgz.dir/src/operations/divide.cpp.o"
 
 # External object files for target rgz
 rgz_EXTERNAL_OBJECTS =
@@ -191,10 +205,11 @@ rgz: CMakeFiles/rgz.dir/src/translate/translate.cpp.o
 rgz: CMakeFiles/rgz.dir/src/io/io.cpp.o
 rgz: CMakeFiles/rgz.dir/src/operations/sum.cpp.o
 rgz: CMakeFiles/rgz.dir/src/operations/multiply.cpp.o
-rgz: CMakeFiles/rgz.dir/src/operations/operations.cpp.o
+rgz: CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.o
+rgz: CMakeFiles/rgz.dir/src/operations/divide.cpp.o
 rgz: CMakeFiles/rgz.dir/build.make
 rgz: CMakeFiles/rgz.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable rgz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable rgz"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rgz.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

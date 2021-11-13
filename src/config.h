@@ -2,10 +2,9 @@
 #define RGZ_1_CONFIG_H
 
 #define NUM_CHUNK_LEN 9
-#define NUM_MAX_LEN 256
+#define NUM_MAX_LEN 1024
 
-#define STR_FORMAT "%255s"
-#define NUM_FORMAT "%lli"
+#define STR_FORMAT "%1023s"
 
 enum class Comparison_flags
 {
@@ -25,6 +24,7 @@ enum class Operations
     multiply = '*',
     sum = '+',
     subtract = '-',
+    divide = '/'
 };
 
 enum class Signs

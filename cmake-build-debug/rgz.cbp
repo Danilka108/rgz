@@ -100,16 +100,22 @@
 		<Unit filename="/home/danilka108/CLionProjects/rgz/src/num/num.h">
 			<Option target="rgz"/>
 		</Unit>
+		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/choose_operation.cpp">
+			<Option target="rgz"/>
+		</Unit>
+		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/choose_operation.h">
+			<Option target="rgz"/>
+		</Unit>
+		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/divide.cpp">
+			<Option target="rgz"/>
+		</Unit>
+		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/divide.h">
+			<Option target="rgz"/>
+		</Unit>
 		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/multiply.cpp">
 			<Option target="rgz"/>
 		</Unit>
 		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/multiply.h">
-			<Option target="rgz"/>
-		</Unit>
-		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/operations.cpp">
-			<Option target="rgz"/>
-		</Unit>
-		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/operations.h">
 			<Option target="rgz"/>
 		</Unit>
 		<Unit filename="/home/danilka108/CLionProjects/rgz/src/operations/sum.cpp">

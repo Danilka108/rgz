@@ -1,3 +1,4 @@
+#include <cmath>
 #include "../config.h"
 
 #ifndef RGZ_1_NUM_H
@@ -14,6 +15,8 @@ struct Num
 
 Num *create_num(int, Signs = Signs::positive);
 
+Num *create_num_from_num_chunk(Num_chunk);
+
 Num *copy_num(Num *);
 
 void update_num(Num **, Num *);
@@ -24,8 +27,10 @@ Num *get_num_slice(Num *, int, int);
 
 void add_zeros_to_num(Num **, int);
 
+Comparison_flags compare_unsigned_nums(Num *, Num *);
+
 int get_num_chunk_len(Num_chunk);
 
-Comparison_flags compare_unsigned_nums(Num *, Num *);
+int get_nums_delta_len(Num *, Num *);
 
 #endif //RGZ_1_NUM_H

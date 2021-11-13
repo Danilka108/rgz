@@ -11,6 +11,14 @@ Num *create_num(int len, Signs sign)
     return num;
 }
 
+Num *create_num_from_num_chunk(Num_chunk num_chunk)
+{
+    Num *new_num = create_num(1, num_chunk < 0 ? Signs::negative : Signs::positive);
+    new_num->chunks[0] = num_chunk;
+    
+    return new_num;
+}
+
 Num *copy_num(Num *num)
 {
     Num *new_num = create_num(num->len, num->sign);
@@ -34,7 +42,6 @@ void concat_num(Num **num, Num *num_addition)
         if (i < (*num)->len) new_num->chunks[i] = (*num)->chunks[i];
         else new_num->chunks[i] = num_addition->chunks[i - (*num)->len];
     }
-    
     update_num(num, new_num);
 }
 
@@ -69,15 +76,6 @@ void add_zeros_to_num(Num **num, int zeros_count)
     update_num(num, new_num);
 }
 
-int get_num_chunk_len(Num_chunk num_chunk)
-{
-    int len = 1;
-    
-    while (num_chunk /= 10) len++;
-    
-    return len;
-}
-
 Comparison_flags compare_unsigned_nums(Num *a_num, Num *b_num)
 {
     if (a_num->len > b_num->len) return Comparison_flags::bigger;
@@ -90,4 +88,20 @@ Comparison_flags compare_unsigned_nums(Num *a_num, Num *b_num)
     }
     
     return Comparison_flags::equal;
+}
+
+int get_num_chunk_len(Num_chunk num_chunk)
+{
+    int len = 1;
+    
+    while (num_chunk /= 10) len++;
+    
+    return len;
+}
+
+int get_nums_delta_len(Num *a_num, Num *b_num)
+{
+    int a_num_first_chunk_len = get_num_chunk_len(a_num->chunks[0]);
+    int b_num_first_chunk_len = get_num_chunk_len(b_num->chunks[0]);
+    return a_num_first_chunk_len - b_num_first_chunk_len + NUM_CHUNK_LEN * (a_num->len - b_num->len);
 }
