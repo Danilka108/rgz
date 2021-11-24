@@ -105,3 +105,8 @@ int get_nums_delta_len(Num *a_num, Num *b_num)
     int b_num_first_chunk_len = get_num_chunk_len(b_num->chunks[0]);
     return a_num_first_chunk_len - b_num_first_chunk_len + NUM_CHUNK_LEN * (a_num->len - b_num->len);
 }
+
+int get_num_len(Num *num)
+{
+    return num->len;
+}

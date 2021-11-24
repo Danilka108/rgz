@@ -33,4 +33,6 @@ int get_num_chunk_len(Num_chunk);
 
 int get_nums_delta_len(Num *, Num *);
 
+int get_num_len(Num *);
+
 #endif //RGZ_1_NUM_H
