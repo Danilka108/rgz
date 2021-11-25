@@ -12,11 +12,12 @@ Num *divide_num(Num *dividend, Num *divider)
     int slice_end = divider->len;
     
     Comparison_flags comparison;
-    
     do
     {
-        Num *dividend_slice = get_num_slice(dividend, slice_start, slice_end < dividend->len ? slice_end :
-                                                                   dividend->len);
+        Num *dividend_slice = get_num_slice(
+                dividend, slice_start,
+                slice_end < dividend->len ? slice_end : dividend->len
+        );
         
         if (compare_unsigned_nums(remainder, zero) == Comparison_flags::equal)
             update_num(&remainder, dividend_slice);
@@ -62,7 +63,6 @@ Num *divide_num(Num *dividend, Num *divider)
         slice_start = slice_end;
         slice_end++;
     } while (slice_end <= dividend->len);
-    
     
     quotient->sign = dividend->sign == divider->sign
                      ? Signs::positive

@@ -4,7 +4,7 @@ Num *sum_unsigned_nums(Num *max_num, Num *min_num)
 {
     int delta_len = max_num->len - min_num->len;
     
-    Num *num = create_num(max_num->len + 1);
+    auto num = create_num(max_num->len + 1);
     
     Num_chunk buffer = 0;
     for (int i = max_num->len - 1; i >= 0; i--)
@@ -25,7 +25,7 @@ Num *subtract_unsigned_nums(Num *max_num, Num *min_num)
 {
     int delta_len = max_num->len - min_num->len;
     
-    Num *num = create_num(max_num->len);
+    auto num = create_num(max_num->len);
     
     Num_chunk buffer = 0;
     for (int i = max_num->len - 1; i >= 0; i--)
@@ -54,7 +54,7 @@ Num *sum_nums(Num *a_num, Num *b_num, Signs sign)
                        ? Signs::positive
                        : Signs::negative;
     
-    Comparison_flags comparison = compare_unsigned_nums(a_num, b_num);
+    auto comparison = compare_unsigned_nums(a_num, b_num);
     
     if (a_num->sign != b_num_copy->sign && comparison == Comparison_flags::equal)
     {
@@ -64,14 +64,12 @@ Num *sum_nums(Num *a_num, Num *b_num, Signs sign)
     
     delete zero;
     
-    Num *max_num = comparison == Comparison_flags::bigger ? a_num : b_num_copy;
-    Num *min_num = comparison == Comparison_flags::smaller ? a_num : b_num_copy;
+    auto max_num = comparison == Comparison_flags::bigger ? a_num : b_num_copy;
+    auto min_num = comparison == Comparison_flags::smaller ? a_num : b_num_copy;
     
-    Num *sum;
-    if (max_num->sign == min_num->sign)
-        sum = sum_unsigned_nums(max_num, min_num);
-    else
-        sum = subtract_unsigned_nums(max_num, min_num);
+    auto sum = max_num->sign == min_num->sign
+               ? sum_unsigned_nums(max_num, min_num)
+               : subtract_unsigned_nums(max_num, min_num);
     
     sum->sign = max_num->sign;
     sum = get_num_slice(sum, 0, sum->len);
