@@ -1,5 +1,5 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include <cstdlib>
+#include <cstdio>
 #include "../io/io.hpp"
 #include "sum.hpp"
 #include "multiply.hpp"

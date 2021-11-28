@@ -1,45 +1,15 @@
 #include "io.hpp"
 
-Validation_flags validate_str(Str *str)
-{
-    for (int i = 0; i < str->len; i++)
-    {
-        if (i == 0 && str->chars[i] == '-' && str->len == 1)
-            return Validation_flags::invalid;
-        if (i == 0 && str->chars[i] == '-')
-            continue;
-        
-        switch (str->chars[i])
-        {
-            case '0':
-            case '1':
-            case '2':
-            case '3':
-            case '4':
-            case '5':
-            case '6':
-            case '7':
-            case '8':
-            case '9':
-                continue;
-            default:
-                return Validation_flags::invalid;
-        }
-    }
-    
-    return Validation_flags::valid;
-}
-
 Str *scan_str()
 {
-    Str *str = create_str(NUM_MAX_LEN);
+    auto str = create_str(NUM_MAX_LEN);
     scanf(STR_FORMAT, str->chars);
     str->len = strlen(str->chars);
     
-    if (validate_str(str) == Validation_flags::invalid)
+    if (!validate_str(str))
     {
-        printf("Ошбика. Значение не является валидным.");
-        exit(0);
+        printf("Ошбика! Значение не действительно.");
+        exit(EXIT_FAILURE);
     }
     
     return str;
@@ -47,21 +17,19 @@ Str *scan_str()
 
 Num *scan_num()
 {
-    Str *str = scan_str();
+    auto str = scan_str();
+    auto sign = Signs::positive;
     Num *num;
     
-    if (str->chars[0] == '-')
+    if (str->chars[0] == '-' || str->chars[0] == '+')
     {
-        str->chars += 1;
-        str->len -= 1;
-        
-        num = translate_str_to_num(str);
-        num->sign = Signs::negative;
-    } else
-    {
-        num = translate_str_to_num(str);
-        num->sign = Signs::positive;
+        sign = str->chars[0] == '-' ? Signs::negative : Signs::positive;
+        str->chars++;
+        str->len--;
     }
+    
+    num = translate_str_to_num(str);
+    num->sign = sign;
     
     delete str;
     return num;
@@ -69,7 +37,7 @@ Num *scan_num()
 
 void print_num(Num *num)
 {
-    Str *str = translate_num_to_str(num);
+    auto str = translate_num_to_str(num);
     
     int start = 0;
     while (str->chars[start] == '0' && start < num->len * NUM_CHUNK_LEN - 1)
@@ -77,7 +45,7 @@ void print_num(Num *num)
     
     if (num->sign == Signs::negative) printf("-");
     
-    Str *end = create_str(1);
+    auto end = create_str(1);
     end->chars[0] = '\0';
     
     concat_str(&str, end);
@@ -91,7 +59,7 @@ Operations scan_operation()
 {
     char operation;
     printf("Выберите операцию (+, -, *, /): ");
-    scanf("%1s", &operation);
+    scanf("%c", &operation);
     
     switch (operation)
     {
@@ -104,8 +72,8 @@ Operations scan_operation()
         case (char) (Operations::divide):
             return Operations::divide;
         default:
-            printf("Ошибка. Данная операция не определена.");
-            exit(0);
+            printf("Ошибка! Данная операция не определена.");
+            exit(EXIT_FAILURE);
     }
 }
 

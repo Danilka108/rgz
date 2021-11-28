@@ -13,12 +13,6 @@ enum class Comparison_flags
     bigger,
 };
 
-enum class Validation_flags
-{
-    valid,
-    invalid,
-};
-
 enum class Operations
 {
     multiply = '*',

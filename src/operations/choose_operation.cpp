@@ -2,12 +2,12 @@
 
 void choose_operation()
 {
-    Operations operation = scan_operation();
+    auto operation = scan_operation();
     
     printf("Введите число №1: ");
-    Num *a_num = scan_num();
+    auto a_num = scan_num();
     printf("Введите число №2: ");
-    Num *b_num = scan_num();
+    auto b_num = scan_num();
     
     Num *num;
     
@@ -27,6 +27,7 @@ void choose_operation()
             break;
     }
     
+    printf("Результат: ");
     print_num(num);
     
     delete a_num;

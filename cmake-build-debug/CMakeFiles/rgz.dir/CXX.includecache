@@ -6,29 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/danilka108/CLionProjects/rgz/main.cpp
-main.h
-/home/danilka108/CLionProjects/rgz/main.h
-
-/home/danilka108/CLionProjects/rgz/main.h
-src/operations/choose_operation.hpp
-/home/danilka108/CLionProjects/rgz/src/operations/choose_operation.hpp
-
-/home/danilka108/CLionProjects/rgz/src/config.h
-
-/home/danilka108/CLionProjects/rgz/src/io/io.cpp
-io.hpp
-/home/danilka108/CLionProjects/rgz/src/io/io.hpp
+/home/danilka108/CLionProjects/rgz/src/config.hpp
 
 /home/danilka108/CLionProjects/rgz/src/io/io.hpp
-stdio.h
+cstdio
 -
-string.h
+cstring
 -
-stdlib.h
+cstdlib
 -
-../config.h
-/home/danilka108/CLionProjects/rgz/src/config.h
+../config.hpp
+/home/danilka108/CLionProjects/rgz/src/config.hpp
 ../str/str.hpp
 /home/danilka108/CLionProjects/rgz/src/str/str.hpp
 ../num/num.hpp
@@ -36,24 +24,20 @@ stdlib.h
 ../translate/translate.hpp
 /home/danilka108/CLionProjects/rgz/src/translate/translate.hpp
 
-/home/danilka108/CLionProjects/rgz/src/num/num.cpp
-num.hpp
-/home/danilka108/CLionProjects/rgz/src/num/num.hpp
-
 /home/danilka108/CLionProjects/rgz/src/num/num.hpp
 cmath
 -
-../config.h
-/home/danilka108/CLionProjects/rgz/src/config.h
+../config.hpp
+/home/danilka108/CLionProjects/rgz/src/config.hpp
 
 /home/danilka108/CLionProjects/rgz/src/operations/choose_operation.cpp
 choose_operation.hpp
 /home/danilka108/CLionProjects/rgz/src/operations/choose_operation.hpp
 
 /home/danilka108/CLionProjects/rgz/src/operations/choose_operation.hpp
-stdlib.h
+cstdlib
 -
-stdio.h
+cstdio
 -
 ../io/io.hpp
 /home/danilka108/CLionProjects/rgz/src/io/io.hpp
@@ -64,10 +48,6 @@ multiply.hpp
 divide.hpp
 /home/danilka108/CLionProjects/rgz/src/operations/divide.hpp
 
-/home/danilka108/CLionProjects/rgz/src/operations/divide.cpp
-divide.hpp
-/home/danilka108/CLionProjects/rgz/src/operations/divide.hpp
-
 /home/danilka108/CLionProjects/rgz/src/operations/divide.hpp
 ../num/num.hpp
 /home/danilka108/CLionProjects/rgz/src/num/num.hpp
@@ -76,41 +56,27 @@ sum.hpp
 multiply.hpp
 /home/danilka108/CLionProjects/rgz/src/operations/multiply.hpp
 
-/home/danilka108/CLionProjects/rgz/src/operations/multiply.cpp
-multiply.hpp
 /home/danilka108/CLionProjects/rgz/src/operations/multiply.hpp
-
-/home/danilka108/CLionProjects/rgz/src/operations/multiply.hpp
+cstdio
+-
 ../num/num.hpp
 /home/danilka108/CLionProjects/rgz/src/num/num.hpp
 sum.hpp
 /home/danilka108/CLionProjects/rgz/src/operations/sum.hpp
 ../io/io.hpp
 /home/danilka108/CLionProjects/rgz/src/io/io.hpp
-stdio.h
--
-
-/home/danilka108/CLionProjects/rgz/src/operations/sum.cpp
-sum.hpp
-/home/danilka108/CLionProjects/rgz/src/operations/sum.hpp
 
 /home/danilka108/CLionProjects/rgz/src/operations/sum.hpp
-math.h
+cmath
 -
 ../num/num.hpp
 /home/danilka108/CLionProjects/rgz/src/num/num.hpp
-../config.h
-/home/danilka108/CLionProjects/rgz/src/config.h
-
-/home/danilka108/CLionProjects/rgz/src/str/str.cpp
-str.hpp
-/home/danilka108/CLionProjects/rgz/src/str/str.hpp
+../config.hpp
+/home/danilka108/CLionProjects/rgz/src/config.hpp
 
 /home/danilka108/CLionProjects/rgz/src/str/str.hpp
-
-/home/danilka108/CLionProjects/rgz/src/translate/translate.cpp
-translate.hpp
-/home/danilka108/CLionProjects/rgz/src/translate/translate.hpp
+cstring
+-
 
 /home/danilka108/CLionProjects/rgz/src/translate/translate.hpp
 cmath

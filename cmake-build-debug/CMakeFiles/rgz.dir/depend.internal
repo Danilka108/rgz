@@ -4,7 +4,7 @@
 CMakeFiles/rgz.dir/main.cpp.o
  /home/danilka108/CLionProjects/rgz/main.cpp
  /home/danilka108/CLionProjects/rgz/main.h
- /home/danilka108/CLionProjects/rgz/src/config.h
+ /home/danilka108/CLionProjects/rgz/src/config.hpp
  /home/danilka108/CLionProjects/rgz/src/io/io.hpp
  /home/danilka108/CLionProjects/rgz/src/num/num.hpp
  /home/danilka108/CLionProjects/rgz/src/operations/choose_operation.hpp
@@ -14,18 +14,18 @@ CMakeFiles/rgz.dir/main.cpp.o
  /home/danilka108/CLionProjects/rgz/src/str/str.hpp
  /home/danilka108/CLionProjects/rgz/src/translate/translate.hpp
 CMakeFiles/rgz.dir/src/io/io.cpp.o
- /home/danilka108/CLionProjects/rgz/src/config.h
+ /home/danilka108/CLionProjects/rgz/src/config.hpp
  /home/danilka108/CLionProjects/rgz/src/io/io.cpp
  /home/danilka108/CLionProjects/rgz/src/io/io.hpp
  /home/danilka108/CLionProjects/rgz/src/num/num.hpp
  /home/danilka108/CLionProjects/rgz/src/str/str.hpp
  /home/danilka108/CLionProjects/rgz/src/translate/translate.hpp
 CMakeFiles/rgz.dir/src/num/num.cpp.o
- /home/danilka108/CLionProjects/rgz/src/config.h
+ /home/danilka108/CLionProjects/rgz/src/config.hpp
  /home/danilka108/CLionProjects/rgz/src/num/num.cpp
  /home/danilka108/CLionProjects/rgz/src/num/num.hpp
 CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.o
- /home/danilka108/CLionProjects/rgz/src/config.h
+ /home/danilka108/CLionProjects/rgz/src/config.hpp
  /home/danilka108/CLionProjects/rgz/src/io/io.hpp
  /home/danilka108/CLionProjects/rgz/src/num/num.hpp
  /home/danilka108/CLionProjects/rgz/src/operations/choose_operation.cpp
@@ -36,7 +36,7 @@ CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.o
  /home/danilka108/CLionProjects/rgz/src/str/str.hpp
  /home/danilka108/CLionProjects/rgz/src/translate/translate.hpp
 CMakeFiles/rgz.dir/src/operations/divide.cpp.o
- /home/danilka108/CLionProjects/rgz/src/config.h
+ /home/danilka108/CLionProjects/rgz/src/config.hpp
  /home/danilka108/CLionProjects/rgz/src/io/io.hpp
  /home/danilka108/CLionProjects/rgz/src/num/num.hpp
  /home/danilka108/CLionProjects/rgz/src/operations/divide.cpp
@@ -46,7 +46,7 @@ CMakeFiles/rgz.dir/src/operations/divide.cpp.o
  /home/danilka108/CLionProjects/rgz/src/str/str.hpp
  /home/danilka108/CLionProjects/rgz/src/translate/translate.hpp
 CMakeFiles/rgz.dir/src/operations/multiply.cpp.o
- /home/danilka108/CLionProjects/rgz/src/config.h
+ /home/danilka108/CLionProjects/rgz/src/config.hpp
  /home/danilka108/CLionProjects/rgz/src/io/io.hpp
  /home/danilka108/CLionProjects/rgz/src/num/num.hpp
  /home/danilka108/CLionProjects/rgz/src/operations/multiply.cpp
@@ -55,7 +55,7 @@ CMakeFiles/rgz.dir/src/operations/multiply.cpp.o
  /home/danilka108/CLionProjects/rgz/src/str/str.hpp
  /home/danilka108/CLionProjects/rgz/src/translate/translate.hpp
 CMakeFiles/rgz.dir/src/operations/sum.cpp.o
- /home/danilka108/CLionProjects/rgz/src/config.h
+ /home/danilka108/CLionProjects/rgz/src/config.hpp
  /home/danilka108/CLionProjects/rgz/src/num/num.hpp
  /home/danilka108/CLionProjects/rgz/src/operations/sum.cpp
  /home/danilka108/CLionProjects/rgz/src/operations/sum.hpp
@@ -63,7 +63,7 @@ CMakeFiles/rgz.dir/src/str/str.cpp.o
  /home/danilka108/CLionProjects/rgz/src/str/str.cpp
  /home/danilka108/CLionProjects/rgz/src/str/str.hpp
 CMakeFiles/rgz.dir/src/translate/translate.cpp.o
- /home/danilka108/CLionProjects/rgz/src/config.h
+ /home/danilka108/CLionProjects/rgz/src/config.hpp
  /home/danilka108/CLionProjects/rgz/src/num/num.hpp
  /home/danilka108/CLionProjects/rgz/src/str/str.hpp
  /home/danilka108/CLionProjects/rgz/src/translate/translate.cpp

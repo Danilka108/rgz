@@ -1,19 +1,19 @@
 #include <cmath>
-#include "../config.h"
+#include "../config.hpp"
 
 #ifndef RGZ_1_NUM_H
 #define RGZ_1_NUM_H
 
 typedef long long int Num_chunk;
 
-struct Num
+typedef struct
 {
-    int len;
+    size_t len;
     Signs sign;
     Num_chunk *chunks;
-};
+} Num;
 
-Num *create_num(int, Signs = Signs::positive);
+Num *create_num(size_t, Signs = Signs::positive);
 
 Num *create_num_from_num_chunk(Num_chunk);
 
@@ -23,16 +23,16 @@ void update_num(Num **, Num *);
 
 void concat_num(Num **, Num *);
 
-Num *get_num_slice(Num *, int, int);
+void trim_num_zeros(Num **);
 
-void add_zeros_to_num(Num **, int);
+Num *get_num_slice(Num *, size_t, size_t);
+
+void add_zero_chunks_to_num(Num **, size_t);
 
 Comparison_flags compare_unsigned_nums(Num *, Num *);
 
-int get_num_chunk_len(Num_chunk);
+size_t get_num_chunk_len(Num_chunk);
 
-int get_nums_delta_len(Num *, Num *);
-
-int get_num_len(Num *);
+size_t get_nums_delta_len(Num *, Num *);
 
 #endif //RGZ_1_NUM_H

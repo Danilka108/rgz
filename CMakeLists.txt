@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 set(
         PROJECT_HEADERS
-        main.h
         src/num/num.hpp
         src/str/str.hpp
         src/translate/translate.hpp

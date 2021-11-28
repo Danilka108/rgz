@@ -1,28 +1,44 @@
 #include "divide.hpp"
 
-Num *divide_num(Num *dividend, Num *divider)
+Num *divide_num(Num *dividend, Num *divisor)
 {
-    Num *one = create_num_from_num_chunk(1);
-    Num *zero = create_num_from_num_chunk(0);
+    auto zero = create_num_from_num_chunk(0);
     
-    Num *quotient = create_num_from_num_chunk(0);
-    Num *remainder = create_num_from_num_chunk(0);
+    if (compare_unsigned_nums(divisor, zero) == Comparison_flags::equal)
+    {
+        printf("Ошибка! Нельзя делить на нуль.");
+        exit(EXIT_SUCCESS);
+    }
     
-    int slice_start = 0;
-    int slice_end = divider->len;
+    if (compare_unsigned_nums(dividend, zero) == Comparison_flags::equal)
+        return zero;
+    
+    if (compare_unsigned_nums(dividend, divisor) == Comparison_flags::smaller)
+        return zero;
+    
+    delete zero;
+    
+    auto num = divide_unsigned_num(dividend, divisor);
+    num->sign = dividend->sign == divisor->sign ? Signs::positive : Signs::negative;
+    
+    return num;
+}
+
+Num *divide_unsigned_num(Num *dividend, Num *divisor)
+{
+    auto one = create_num_from_num_chunk(1);
+    auto zero = create_num_from_num_chunk(0);
+    
+    auto quotient = create_num_from_num_chunk(0);
+    auto remainder = create_num_from_num_chunk(0);
+    
+    size_t slice_start = 0;
+    size_t slice_end = divisor->len;
     
     Comparison_flags comparison;
     do
     {
-        Num *dividend_slice = get_num_slice(
-                dividend, slice_start,
-                slice_end < dividend->len ? slice_end : dividend->len
-        );
-        
-        if (compare_unsigned_nums(remainder, zero) == Comparison_flags::equal)
-            update_num(&remainder, dividend_slice);
-        else
-            concat_num(&remainder, dividend_slice);
+        update_remainder(&remainder, dividend, slice_start, slice_end);
         
         if (compare_unsigned_nums(remainder, zero) == Comparison_flags::equal)
         {
@@ -32,16 +48,16 @@ Num *divide_num(Num *dividend, Num *divider)
             continue;
         }
         
-        comparison = compare_unsigned_nums(divider, remainder);
+        comparison = compare_unsigned_nums(divisor, remainder);
+        
+        if (comparison == Comparison_flags::bigger && slice_end >= dividend->len)
+        {
+            add_zero_chunks_to_num(&quotient, 1);
+            break;
+        }
         
         if (comparison == Comparison_flags::bigger)
         {
-            if (slice_end >= dividend->len)
-            {
-                add_zeros_to_num(&quotient, 1);
-                break;
-            }
-            
             slice_start = slice_end;
             slice_end++;
             continue;
@@ -57,62 +73,70 @@ Num *divide_num(Num *dividend, Num *divider)
             continue;
         }
         
-        concat_num(&quotient, divide_remainder(&remainder, divider));
-        update_num(&remainder, get_num_slice(remainder, 0, remainder->len));
+        concat_num(&quotient, divide_unsigned_remainder(&remainder, divisor));
+        trim_num_zeros(&remainder);
         
         slice_start = slice_end;
         slice_end++;
     } while (slice_end <= dividend->len);
     
-    quotient->sign = dividend->sign == divider->sign
-                     ? Signs::positive
-                     : Signs::negative;
+    delete zero;
+    delete one;
+    delete remainder;
     
     return quotient;
 }
 
-Num *divide_remainder(Num **dividend, Num *divider)
+void update_remainder(Num **remainder, Num *dividend, size_t slice_start, size_t slice_end)
 {
-    Num *zero = create_num_from_num_chunk(0);
+    auto zero = create_num_from_num_chunk(0);
     
-    Num *dividend_copy = copy_num(*dividend);
-    Num *divider_copy = copy_num(divider);
+    auto dividend_slice = get_num_slice(
+            dividend,
+            slice_start,
+            slice_end < dividend->len ? slice_end : dividend->len
+    );
     
-    Num *quotient = create_num_from_num_chunk(0);
-    Num *remainder = create_num_from_num_chunk(0);
+    if (compare_unsigned_nums(*remainder, zero) == Comparison_flags::equal)
+        update_num(remainder, dividend_slice);
+    else
+        concat_num(remainder, dividend_slice);
     
-    int delta_len = get_nums_delta_len(*dividend, divider);
-    int degree = (int) pow(10, delta_len);
+    delete zero;
+}
+
+Num *divide_unsigned_remainder(Num **remainder, Num *original_divisor)
+{
+    auto zero = create_num_from_num_chunk(0);
+    ssize_t delta_len = get_nums_delta_len(*remainder, original_divisor);
+    auto additional_zeros = create_num_from_num_chunk(pow(10, delta_len));
     
-    Num *additional_zeros = create_num_from_num_chunk(degree);
-    update_num(&divider_copy, multiply_nums(divider, additional_zeros));
+    auto divisor = multiply_nums(original_divisor, additional_zeros);
+    auto dividend = copy_num(*remainder);
+    auto quotient = create_num_from_num_chunk(0);
     
     do
     {
-        auto comparison = compare_unsigned_nums(divider_copy, dividend_copy);
+        auto subtract = sum_nums(dividend, divisor, Signs::negative);
         
-        if (comparison == Comparison_flags::bigger)
+        if (subtract->sign == Signs::negative)
         {
-            delta_len--;
-            if (delta_len < 0) break;
+            update_num(&additional_zeros, create_num_from_num_chunk(pow(10, --delta_len)));
+            update_num(&divisor, multiply_nums(original_divisor, additional_zeros));
             
-            degree = (int) pow(10, delta_len);
-            additional_zeros = create_num_from_num_chunk(degree);
-            update_num(&divider_copy, multiply_nums(divider, additional_zeros));
-            
+            delete subtract;
             continue;
         }
         
         update_num(&quotient, sum_nums(quotient, additional_zeros));
-        
-        remainder = sum_nums(dividend_copy, divider_copy, Signs::negative);
-        update_num(&dividend_copy, remainder);
+        update_num(&dividend, subtract);
     } while (delta_len >= 0);
     
-    delete divider_copy;
-    delete additional_zeros;
-    delete zero;
+    update_num(remainder, dividend);
     
-    *dividend = remainder;
+    delete divisor;
+    delete zero;
+    delete additional_zeros;
+    
     return quotient;
 }

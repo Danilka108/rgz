@@ -7,6 +7,10 @@
 
 Num *divide_num(Num *, Num *);
 
-Num *divide_remainder(Num **dividend, Num *divider);
+Num *divide_unsigned_num(Num *, Num *);
+
+void update_remainder(Num **, Num *, size_t, size_t);
+
+Num *divide_unsigned_remainder(Num **, Num *);
 
 #endif //RGZ_DIVIDE_H

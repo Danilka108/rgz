@@ -85,9 +85,6 @@
 		<Unit filename="/home/danilka108/CLionProjects/rgz/main.cpp">
 			<Option target="rgz"/>
 		</Unit>
-		<Unit filename="/home/danilka108/CLionProjects/rgz/main.h">
-			<Option target="rgz"/>
-		</Unit>
 		<Unit filename="/home/danilka108/CLionProjects/rgz/src/io/io.cpp">
 			<Option target="rgz"/>
 		</Unit>
