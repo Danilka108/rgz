@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/home/danilka108/CLionProjects/rgz/main.cpp
+src/operations/choose_operation.hpp
+/home/danilka108/CLionProjects/rgz/src/operations/choose_operation.hpp
+
 /home/danilka108/CLionProjects/rgz/src/config.hpp
+
+/home/danilka108/CLionProjects/rgz/src/io/io.cpp
+io.hpp
+/home/danilka108/CLionProjects/rgz/src/io/io.hpp
 
 /home/danilka108/CLionProjects/rgz/src/io/io.hpp
 cstdio
@@ -23,6 +31,10 @@ cstdlib
 /home/danilka108/CLionProjects/rgz/src/num/num.hpp
 ../translate/translate.hpp
 /home/danilka108/CLionProjects/rgz/src/translate/translate.hpp
+
+/home/danilka108/CLionProjects/rgz/src/num/num.cpp
+num.hpp
+/home/danilka108/CLionProjects/rgz/src/num/num.hpp
 
 /home/danilka108/CLionProjects/rgz/src/num/num.hpp
 cmath
@@ -48,11 +60,19 @@ multiply.hpp
 divide.hpp
 /home/danilka108/CLionProjects/rgz/src/operations/divide.hpp
 
+/home/danilka108/CLionProjects/rgz/src/operations/divide.cpp
+divide.hpp
+/home/danilka108/CLionProjects/rgz/src/operations/divide.hpp
+
 /home/danilka108/CLionProjects/rgz/src/operations/divide.hpp
 ../num/num.hpp
 /home/danilka108/CLionProjects/rgz/src/num/num.hpp
 sum.hpp
 /home/danilka108/CLionProjects/rgz/src/operations/sum.hpp
+multiply.hpp
+/home/danilka108/CLionProjects/rgz/src/operations/multiply.hpp
+
+/home/danilka108/CLionProjects/rgz/src/operations/multiply.cpp
 multiply.hpp
 /home/danilka108/CLionProjects/rgz/src/operations/multiply.hpp
 
@@ -66,6 +86,10 @@ sum.hpp
 ../io/io.hpp
 /home/danilka108/CLionProjects/rgz/src/io/io.hpp
 
+/home/danilka108/CLionProjects/rgz/src/operations/sum.cpp
+sum.hpp
+/home/danilka108/CLionProjects/rgz/src/operations/sum.hpp
+
 /home/danilka108/CLionProjects/rgz/src/operations/sum.hpp
 cmath
 -
@@ -77,6 +101,10 @@ cmath
 /home/danilka108/CLionProjects/rgz/src/str/str.hpp
 cstring
 -
+
+/home/danilka108/CLionProjects/rgz/src/translate/translate.cpp
+translate.hpp
+/home/danilka108/CLionProjects/rgz/src/translate/translate.hpp
 
 /home/danilka108/CLionProjects/rgz/src/translate/translate.hpp
 cmath

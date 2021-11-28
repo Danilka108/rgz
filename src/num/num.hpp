@@ -29,6 +29,8 @@ Num *get_num_slice(Num *, size_t, size_t);
 
 void add_zero_chunks_to_num(Num **, size_t);
 
+Comparison_flags compare_nums(Num *, Num *);
+
 Comparison_flags compare_unsigned_nums(Num *, Num *);
 
 size_t get_num_chunk_len(Num_chunk);

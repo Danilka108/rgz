@@ -102,6 +102,19 @@ Comparison_flags compare_unsigned_nums(Num *a_num, Num *b_num)
     return Comparison_flags::equal;
 }
 
+Comparison_flags compare_nums(Num *a_num, Num *b_num)
+{
+    auto zero = create_num_from_num_chunk(0);
+    
+    if (a_num->sign == b_num->sign) return compare_unsigned_nums(a_num, b_num);
+    
+    if (compare_unsigned_nums(a_num, zero) == Comparison_flags::equal &&
+        compare_unsigned_nums(b_num, zero) == Comparison_flags::equal)
+        return Comparison_flags::equal;
+    
+    return a_num->sign == Signs::negative ? Comparison_flags::smaller : Comparison_flags::bigger;
+}
+
 size_t get_num_chunk_len(Num_chunk num_chunk)
 {
     size_t len = 1;

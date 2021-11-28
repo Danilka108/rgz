@@ -119,7 +119,7 @@ Num *divide_unsigned_remainder(Num **remainder, Num *original_divisor)
     {
         auto subtract = sum_nums(dividend, divisor, Signs::negative);
         
-        if (subtract->sign == Signs::negative)
+        if (compare_nums(subtract, zero) == Comparison_flags::smaller)
         {
             update_num(&additional_zeros, create_num_from_num_chunk(pow(10, --delta_len)));
             update_num(&divisor, multiply_nums(original_divisor, additional_zeros));

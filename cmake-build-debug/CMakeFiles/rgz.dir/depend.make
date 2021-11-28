@@ -3,7 +3,6 @@
 
 CMakeFiles/rgz.dir/main.cpp.o: \
  ../main.cpp \
- ../main.h \
  ../src/config.hpp \
  ../src/io/io.hpp \
  ../src/num/num.hpp \
