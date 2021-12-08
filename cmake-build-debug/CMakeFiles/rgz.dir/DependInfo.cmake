@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/danilka108/CLionProjects/rgz/main.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/main.cpp.o"
+  "/home/danilka108/CLionProjects/rgz/rgz_one_file.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/rgz_one_file.cpp.o"
   "/home/danilka108/CLionProjects/rgz/src/io/io.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/src/io/io.cpp.o"
   "/home/danilka108/CLionProjects/rgz/src/num/num.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/src/num/num.cpp.o"
   "/home/danilka108/CLionProjects/rgz/src/operations/choose_operation.cpp" "/home/danilka108/CLionProjects/rgz/cmake-build-debug/CMakeFiles/rgz.dir/src/operations/choose_operation.cpp.o"

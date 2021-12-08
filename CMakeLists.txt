@@ -26,7 +26,7 @@ set(
         src/operations/multiply.cpp
         src/operations/choose_operation.cpp
         src/operations/divide.cpp
-)
+        rgz_one_file.cpp)
 
 add_executable(
         rgz

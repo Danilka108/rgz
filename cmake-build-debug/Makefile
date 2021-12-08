@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+rgz_one_file.o: rgz_one_file.cpp.o
+.PHONY : rgz_one_file.o
+
+# target to build an object file
+rgz_one_file.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/rgz_one_file.cpp.o
+.PHONY : rgz_one_file.cpp.o
+
+rgz_one_file.i: rgz_one_file.cpp.i
+.PHONY : rgz_one_file.i
+
+# target to preprocess a source file
+rgz_one_file.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/rgz_one_file.cpp.i
+.PHONY : rgz_one_file.cpp.i
+
+rgz_one_file.s: rgz_one_file.cpp.s
+.PHONY : rgz_one_file.s
+
+# target to generate assembly for a file
+rgz_one_file.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgz.dir/build.make CMakeFiles/rgz.dir/rgz_one_file.cpp.s
+.PHONY : rgz_one_file.cpp.s
+
 src/io/io.o: src/io/io.cpp.o
 .PHONY : src/io/io.o
 
@@ -357,6 +381,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rgz_one_file.o"
+	@echo "... rgz_one_file.i"
+	@echo "... rgz_one_file.s"
 	@echo "... src/io/io.o"
 	@echo "... src/io/io.i"
 	@echo "... src/io/io.s"
